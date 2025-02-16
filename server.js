@@ -2,7 +2,7 @@ import http from "http";
 import fs from "fs/promises";
 import { isValidURL } from "./utils.js";
 import { nanoid } from "nanoid";
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 const urls = [];
 
