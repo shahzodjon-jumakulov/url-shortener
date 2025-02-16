@@ -28,16 +28,12 @@ node server.js
 ### 1. Shorten a URL
 Send a POST request to /shorten with a JSON body:
 ```json
-Copy
-Edit
 {
   "url": "https://www.google.com"
 }
 ```
 The server responds with:
 ```json
-Copy
-Edit
 {
   "shortUrl": "http://localhost:5000/abc123"
 }
@@ -53,6 +49,5 @@ The URLs are stored in data.json in this format:
 ```
 
 ## API Endpoints
-Method	Endpoint	Description
 POST	/shorten	Shorten a long URL (JSON body).
 GET	/:shortUrl	Redirect to the original URL.
